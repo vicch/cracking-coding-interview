@@ -30,7 +30,7 @@ char* compress(char* str)
         count = getRepeat(str + i); // Get repeated time of current letter
         i += count;                 // Move to next different letter
         while (count > 0 && j < l) {
-            new[j++] = '0' + count % 10; // Write count of current letter
+            new[j++] = '0' + count % 10; // Write repeat time of current letter
             count /= 10;                 // TODO: Revert the number, currently backwards
         }
     }
